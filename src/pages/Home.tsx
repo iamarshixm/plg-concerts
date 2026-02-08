@@ -1,14 +1,22 @@
 import { MainLayout } from '@/components/layout/MainLayout';
 import { EventList } from '@/components/events/EventList';
 import { Music, Sparkles, Users } from 'lucide-react';
+import heroConcert from '@/assets/hero-concert.jpg';
 
 const Home = () => {
   return (
     <MainLayout>
       {/* Hero Section */}
       <section className="relative overflow-hidden border-b border-border/40">
-        {/* Background gradient */}
-        <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-transparent" />
+        {/* Background image */}
+        <div className="absolute inset-0">
+          <img
+            src={heroConcert}
+            alt="Concert background"
+            className="h-full w-full object-cover opacity-30"
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-background/50 via-background/80 to-background" />
+        </div>
         <div className="absolute top-20 right-20 h-72 w-72 rounded-full bg-primary/10 blur-3xl" />
         <div className="absolute bottom-10 left-10 h-48 w-48 rounded-full bg-primary/5 blur-2xl" />
 

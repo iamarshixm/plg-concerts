@@ -240,6 +240,13 @@ const Checkout = () => {
           .eq('id', couponId);
       }
 
+      // Send Telegram notification (fire and forget)
+      supabase.functions.invoke('telegram-notify', {
+        body: { order_id: order.id },
+      }).catch((err) => {
+        console.error('Failed to send Telegram notification:', err);
+      });
+
       setOrderSuccess(true);
     } catch (err) {
       console.error('Error creating order:', err);
