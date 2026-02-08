@@ -14,8 +14,8 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Vazirmatn', 'Tahoma', 'sans-serif'],
-        display: ['Vazirmatn', 'Tahoma', 'sans-serif'],
+        sans: ['Rokh', 'Vazirmatn', 'Tahoma', 'sans-serif'],
+        display: ['Rokh', 'Vazirmatn', 'Tahoma', 'sans-serif'],
       },
       colors: {
         border: "hsl(var(--border))",
