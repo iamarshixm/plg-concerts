@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/* ROKH Font - Custom Persian Font */
+@font-face {
+  font-family: 'Rokh';
+  src: url('/fonts/RokhFaNum-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
 /* PLG Entertainment - Persian Concert Ticketing Design System */
 /* All colors in HSL format */
 
@@ -108,7 +117,7 @@
 
   body {
     @apply bg-background text-foreground antialiased;
-    font-family: 'Vazirmatn', 'Tahoma', sans-serif;
+    font-family: 'Rokh', 'Vazirmatn', 'Tahoma', sans-serif;
   }
 
   /* Persian number support */
